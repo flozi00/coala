@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coala</string>
+    <string name="save">Save</string>
+    <string name="speak">Hilfe holen</string>
+    <string name="settings">Settings</string>
+    <string name="muchmore">And much more...</string>
+    <string name="activedevelopment">This app is under active development to improve the quality and mass of skills</string>
+
+
+    <string-array name="hlpf">
+        <item>Aus</item>
+        <item>Alarm</item>
+        <item>SMS</item>
+        <item>Anruf</item>
+        <item>SMS + Alarm</item>
+    </string-array>
+
+</resources>
