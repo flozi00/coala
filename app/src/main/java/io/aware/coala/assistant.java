@@ -114,6 +114,7 @@ public class assistant extends Activity {
                         mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
                     } catch(Exception e){
                         e.printStackTrace();
+                        mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
                     }
                 } else {
                     mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
@@ -204,6 +205,9 @@ public class assistant extends Activity {
                         mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
                     } catch(Exception e){
                         e.printStackTrace();
+                        AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
+                        mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                        descriptor.close();
                     }
                 } else {
                     AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
@@ -225,7 +229,7 @@ public class assistant extends Activity {
                 mediaPlayer.start();
 
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
-                    int maxCount = 3;
+                    int maxCount = 1;
                     int count = 0; // initialise outside listener to prevent looping
 
                     @Override
