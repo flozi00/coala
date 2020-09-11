@@ -14,5 +14,9 @@
         <item>Anruf</item>
         <item>SMS + Alarm</item>
     </string-array>
+    <string name="alarm">Alarm</string>
+    <string name="sms">SMS</string>
+    <string name="call">Anruf</string>
+    <string name="api">API</string>
 
 </resources>

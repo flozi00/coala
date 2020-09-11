@@ -54,7 +54,8 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="2dp"
             android:background="#FFFFFF"
-            android:text="Aktivieren" />
+            android:text="Aktivieren"
+            android:textColor="@color/colorAccent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,7 +76,8 @@
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="2dp"
                 android:background="#FFFFFF"
-                android:text="@string/settings" />
+                android:text="@string/settings"
+                android:textColor="@color/colorAccent" />
 
         </LinearLayout>
     </LinearLayout>

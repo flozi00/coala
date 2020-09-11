@@ -6,13 +6,10 @@
     <string name="muchmore">And much more...</string>
     <string name="activedevelopment">This app is under active development to improve the quality and mass of skills</string>
 
+    <string name="alarm">alarm</string>
+    <string name="sms">sms</string>
+    <string name="call">call</string>
+    <string name="api">API</string>
 
-    <string-array name="hlpf">
-        <item>Off</item>
-        <item>Alarm</item>
-        <item>SMS</item>
-        <item>Call</item>
-        <item>SMS + Alarm</item>
-    </string-array>
 
 </resources>

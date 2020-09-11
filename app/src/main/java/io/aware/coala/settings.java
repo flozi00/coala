@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -19,12 +21,13 @@ import androidx.loader.content.CursorLoader;
 
 public class settings extends AppCompatActivity {
 
-    public EditText phonenumber;
+    public EditText phonenumber, customurl;
+    public CheckBox alarm, api, sms, call;
+    public boolean alarm_bool, api_bool, sms_bool, call_bool;
     public Button save;
     public Button mp3Button;
     public Button logs;
     public SharedPreferences pref;
-    public Spinner hlpfeature;
     public String myURI = null;
 
     public int helpfeature;
@@ -37,34 +40,52 @@ public class settings extends AppCompatActivity {
         setContentView(R.layout.settings);
         save = findViewById(R.id.save);
         phonenumber = findViewById(R.id.phonenumber);
+        customurl = findViewById(R.id.customurl);
+
+        alarm = findViewById(R.id.alarm);
+        sms = findViewById(R.id.sms);
+        api = findViewById(R.id.api);
+        call = findViewById(R.id.call);
+
         mp3Button = findViewById(R.id.setdefault);
         logs = findViewById(R.id.logs);
-        hlpfeature = (Spinner) findViewById(R.id.helpfeature);
-
-
-
-        ArrayAdapter<String> adapter6 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, getResources()
-                .getStringArray(R.array.hlpf));//setting the country_array to spinner
-        adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        hlpfeature.setAdapter(adapter6);
-//if you want to set any action you can do in this listener
-        hlpfeature.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
-                helpfeature = position;
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> arg0) {
-            }
-        });
-
 
 
         pref = getApplicationContext().getSharedPreferences("settings", 0); // 0 - for private mode
         phonenumber.setText(pref.getString("phonenumber",""));
-        hlpfeature.setSelection(pref.getInt("hlp", 0));
+        customurl.setText(pref.getString("customurl",""));
+        alarm.setChecked(pref.getBoolean("alarm",false));
+        sms.setChecked(pref.getBoolean("sms",false));
+        api.setChecked(pref.getBoolean("api",false));
+        call.setChecked(pref.getBoolean("call",false));
+
+        alarm.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                alarm_bool = b;
+            }
+        });
+
+        sms.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                sms_bool = b;
+            }
+        });
+
+        call.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                call_bool = b;
+            }
+        });
+
+        api.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                api_bool = b;
+            }
+        });
 
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +94,12 @@ public class settings extends AppCompatActivity {
                 pref = getApplicationContext().getSharedPreferences("settings", 0); // 0 - for private mode
                 SharedPreferences.Editor editor = pref.edit();
                 editor.putString("phonenumber",phonenumber.getText().toString());
-                editor.putInt("hlp",helpfeature);
+                editor.putString("customurl",customurl.getText().toString());
+                editor.putBoolean("alarm",alarm_bool);
+                editor.putBoolean("sms",sms_bool);
+                editor.putBoolean("call",call_bool);
+                editor.putBoolean("api",api_bool);
+
                 if(myURI != null){
                     editor.putString("mp3URI",myURI);
                 }
