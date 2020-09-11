@@ -39,7 +39,7 @@ features                                  :
     fontawesome_icon_name                 : tree
     
   - title                                 : flexible
-    description                           : decide yourself what should happen when the alarm is triggered
+    description                           : Decide yourself what should happen when the alarm is triggered
     fontawesome_icon_name                 : clipboard-list
 
   - title                                 : Universal
