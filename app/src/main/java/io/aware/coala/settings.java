@@ -59,6 +59,12 @@ public class settings extends AppCompatActivity {
         api.setChecked(pref.getBoolean("api",false));
         call.setChecked(pref.getBoolean("call",false));
 
+        alarm_bool = pref.getBoolean("alarm",false);
+        sms_bool = pref.getBoolean("sms",false);
+        api_bool = pref.getBoolean("api",false);
+        call_bool = pref.getBoolean("call",false);
+
+
         alarm.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -144,8 +150,7 @@ public class settings extends AppCompatActivity {
             if (requestCode == SELECT_MUSIC) {
                 Uri selectedMusicUri = data.getData();
                 if (selectedMusicUri != null) {
-                    String pathFromUri = getRealPathFromURI(this, selectedMusicUri);
-                    myURI = pathFromUri;
+                    myURI = getRealPathFromURI(this, selectedMusicUri);
                 }
             }
         }

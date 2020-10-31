@@ -1,4 +1,4 @@
-#Sat Oct 31 16:40:17 CET 2020
+#Sat Oct 31 16:44:55 CET 2020
 base.0=C\:\\Users\\flozi\\StudioProjects\\coala\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
