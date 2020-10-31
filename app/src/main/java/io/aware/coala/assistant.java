@@ -61,7 +61,7 @@ public class assistant extends Activity {
         sms_bool = pref.getBoolean("sms",false);
         call_bool = pref.getBoolean("call",false);
 
-        if(mp3 != "mp3URI"){
+        if(mp3.equals("mp3URI")){
             mymp3 = Uri.parse(mp3);
         }
 
@@ -97,7 +97,7 @@ public class assistant extends Activity {
             queue.add(stringRequest);
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -167,15 +167,12 @@ public class assistant extends Activity {
                 }
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 
     public void startCall(){
         String[] phonenumbers = phonenumber.split(",");
-        for (String p : phonenumbers) {
-
-        }
 
         try {
             Intent intent = new Intent(Intent.ACTION_CALL);
@@ -193,18 +190,18 @@ public class assistant extends Activity {
             }
             startActivity(intent);
         } catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 
     public void getHelp() {
 
-        if(lastCall == 0 || (System.currentTimeMillis() - lastCall) > 3000){
+        if(lastCall == 0 || (System.currentTimeMillis() - lastCall) > 1000){
             lastCall = System.currentTimeMillis();
             try{
                 mediaPlayer.reset();
             } catch(Exception e){
-
+                e.printStackTrace();
             }
 
             if(sms_bool){
@@ -233,7 +230,7 @@ public class assistant extends Activity {
         try {
             mediaPlayer.reset();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 
