@@ -37,7 +37,7 @@ public class assistant extends Activity {
     public Button helpButton;
     public Uri mymp3 = null;
     public String mp3;
-    public boolean playSound = true;
+    public boolean playSound = false;
     public MediaPlayer mediaPlayer = new MediaPlayer();
     public boolean alarm_bool, api_bool, sms_bool, call_bool;
 
@@ -74,29 +74,6 @@ public class assistant extends Activity {
             }
         });
 
-        try {
-            if(mymp3 != null){
-                try {
-                    mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
-                    Toast.makeText(wakeContext, "read file", Toast.LENGTH_SHORT).show();
-                } catch(Exception e){
-                    Toast.makeText(wakeContext, "error read file", Toast.LENGTH_SHORT).show();
-                    e.printStackTrace();
-                    AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
-                    mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
-                    descriptor.close();
-                }
-            } else {
-                Toast.makeText(wakeContext, "default file", Toast.LENGTH_SHORT).show();
-                AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
-                mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
-                descriptor.close();
-            }
-        } catch(Exception e){
-            Toast.makeText(wakeContext, "no sound", Toast.LENGTH_SHORT).show();
-            playSound = false;
-        }
-
     }
 
     public void callAPI(){
@@ -126,37 +103,65 @@ public class assistant extends Activity {
     }
 
     public void playAlarm(){
-        if(playSound){
+
+        if(!playSound){
             try {
-                AudioManager mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
-                mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC), 0);
-
-                try {
-                    mediaPlayer.prepare();
-                } catch(Exception e){
-                    e.printStackTrace();
-                }
-                mediaPlayer.setVolume(1f, 1f);
-                mediaPlayer.setLooping(false);
-                mediaPlayer.start();
-
-                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    int maxCount = 0;
-                    int count = 0; // initialise outside listener to prevent looping
-
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        if (count < maxCount) {
-                            count = count + 1;
-                            mediaPlayer.seekTo(0);
-                            mediaPlayer.start();
-                        }
+                if(mymp3 != null){
+                    try {
+                        mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
+                        Toast.makeText(wakeContext, "read file", Toast.LENGTH_SHORT).show();
+                        playSound = true;
+                    } catch(Exception e){
+                        Toast.makeText(wakeContext, "error read file", Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                        AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
+                        mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                        descriptor.close();
+                        playSound = true;
                     }
-                });
+                } else {
+                    Toast.makeText(wakeContext, "default file", Toast.LENGTH_SHORT).show();
+                    AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
+                    mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                    descriptor.close();
+                    playSound = true;
+                }
+            } catch(Exception e){
+                Toast.makeText(wakeContext, "no sound", Toast.LENGTH_SHORT).show();
+                playSound = false;
+            }
+        }
 
-            } catch (Exception e) {
+
+        try {
+            AudioManager mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+            mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC), 0);
+
+            try {
+                mediaPlayer.prepare();
+            } catch(Exception e){
                 e.printStackTrace();
             }
+            mediaPlayer.setVolume(1f, 1f);
+            mediaPlayer.setLooping(false);
+            mediaPlayer.start();
+
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                int maxCount = 0;
+                int count = 0; // initialise outside listener to prevent looping
+
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    if (count < maxCount) {
+                        count = count + 1;
+                        mediaPlayer.seekTo(0);
+                        mediaPlayer.start();
+                    }
+                }
+            });
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
