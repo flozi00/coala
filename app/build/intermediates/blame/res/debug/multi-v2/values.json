@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\Codes\\Android Apps\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\flozi\\.gradle\\caches\\transforms-2\\files-2.1\\62ef4db91311e36b19e0ba00881f8589\\coordinatorlayout-1.1.0\\res\\values\\values.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "6,8,11,1,10,5,2,4,9,3",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -73,23 +73,6 @@
                         "startOffsets": "17205,40105,40158,40211,40264,210723,210899,211021,211283,211478",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "17289,40153,40206,40259,40312,210784,211016,211077,211344,211540"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3,6,5,4",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "90,149,316,265,206",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "143,200,353,310,259"
-                    },
-                    "to": {
-                        "startLines": "407,408,469,633,634",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "24059,24117,28079,39019,39069",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "24112,24168,28116,39064,39122"
                     }
                 },
                 {
@@ -167,24 +150,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "284",
-                        "startColumns": "4",
-                        "startOffsets": "15779",
-                        "endColumns": "56",
-                        "endOffsets": "15831"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -201,22 +167,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
-                        "startLines": "3,16,12,17",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "57,708,554,800",
-                        "endLines": "11,16,15,17",
-                        "endColumns": "12,90,12,80",
-                        "endOffsets": "548,794,702,876"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "872,881,882,886",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "58818,59306,59396,59546",
-                        "endLines": "880,881,885,886",
-                        "endColumns": "12,89,12,79",
-                        "endOffsets": "59301,59391,59541,59621"
+                        "startLines": "284",
+                        "startColumns": "4",
+                        "startOffsets": "15779",
+                        "endColumns": "56",
+                        "endOffsets": "15831"
                     }
                 },
                 {
@@ -293,6 +257,42 @@
                         "endLines": "4,12,18,34,35,36,44,55,56,57,60,61,64,67,68,69,70,71,74,77,78,79,80,85,88,91,92,93,98,99,100,103,106,107,110,113,116,119,120,123,126,127,132,133,138,141,144,145,146,147,148,149,150,151,152,153,162,5611,5612,5613,5930",
                         "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11,2575,131,3263,107",
                         "endOffsets": "292,583,915,1725,1786,1832,2191,2781,2841,2911,3044,3112,3241,3367,3429,3494,3562,3629,3752,3877,3944,4009,4074,4255,4376,4497,4563,4630,4840,4909,4975,5100,5226,5293,5419,5546,5671,5798,5863,5989,6112,6177,6385,6452,6632,6752,6872,6937,6999,7061,7123,7182,7242,7303,7364,7423,7798,360773,360905,364169,382251"
+                    }
+                },
+                {
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,6,5,4",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "90,149,316,265,206",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "143,200,353,310,259"
+                    },
+                    "to": {
+                        "startLines": "407,408,469,633,634",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "24059,24117,28079,39019,39069",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "24112,24168,28116,39064,39122"
+                    }
+                },
+                {
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,16,12,17",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "57,708,554,800",
+                        "endLines": "11,16,15,17",
+                        "endColumns": "12,90,12,80",
+                        "endOffsets": "548,794,702,876"
+                    },
+                    "to": {
+                        "startLines": "872,881,882,886",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "58818,59306,59396,59546",
+                        "endLines": "880,881,885,886",
+                        "endColumns": "12,89,12,79",
+                        "endOffsets": "59301,59391,59541,59621"
                     }
                 },
                 {

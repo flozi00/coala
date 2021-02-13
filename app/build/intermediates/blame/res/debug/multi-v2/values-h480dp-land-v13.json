@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "F:\\Codes\\Android Apps\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\flozi\\.gradle\\caches\\transforms-2\\files-2.1\\40cc99d105336259ba4d9547cb24f709\\material-1.1.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",

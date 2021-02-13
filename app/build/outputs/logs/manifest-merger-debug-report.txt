@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cc34d95a588588eaffee9cf19d157ce5\navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\40cc99d105336259ba4d9547cb24f709\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8b73c3c5dac00295b925b784073d2040\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -11,7 +11,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.g
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\01a9fb3be8ce56617b5b173766f9a32b\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ffb313332791789fcd2b637d287c1ce6\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\14397f0b2740520cad2b503071a063db\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\81a32186a9da5bfe7161fc6a38ab642c\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ecefe2fda3ad5151d6baba811c2668da\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\623a0cacb15b964b559e6e46ccf53158\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2184d643e3dc48ec088093bf4703920b\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d41efc8fc480fdbcebe08adf1cc73b2\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -49,93 +49,93 @@ MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\358676f876d126cdb93dc2ae9e640f56\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2ae806ece2580bf69becc3d2183e441c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ff8e00f72654800a11574b55f214c01b\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:4:5-29
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:6:5-71
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:6:22-68
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:6:22-68
 uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:7:5-95
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:7:5-95
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:7:22-92
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:7:22-92
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:9:5-67
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:10:5-81
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:12:5-80
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:12:22-77
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:12:22-77
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:13:5-66
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:13:22-63
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:13:22-63
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:14:5-81
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:14:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:15:5-75
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:15:5-75
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:15:22-72
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:15:22-72
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:16:5-67
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:16:5-67
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:16:22-64
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:16:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:17:5-79
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:17:22-76
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:18:5-81
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:18:5-81
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:18:22-78
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#android.permission.CALL_PHONE
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:20:5-22:36
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:20:5-22:36
 	android:required
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:22:9-33
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:22:9-33
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:21:9-53
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:21:9-53
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:24:5-72
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:24:5-72
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:24:22-69
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:24:22-69
 uses-permission#com.android.alarm.permission.SET_ALARM
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:25:5-78
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:25:5-78
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:25:22-75
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:25:22-75
 application
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:27:5-49:19
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:5-49:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\40cc99d105336259ba4d9547cb24f709\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\40cc99d105336259ba4d9547cb24f709\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\448f23e8eac4f156077d0a03db47688b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\448f23e8eac4f156077d0a03db47688b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\14397f0b2740520cad2b503071a063db\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\14397f0b2740520cad2b503071a063db\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\81a32186a9da5bfe7161fc6a38ab642c\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\81a32186a9da5bfe7161fc6a38ab642c\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ecefe2fda3ad5151d6baba811c2668da\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ecefe2fda3ad5151d6baba811c2668da\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\395dcef454f25521e51182a527203fae\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\395dcef454f25521e51182a527203fae\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f6c967d4d0430ad205dda58018793e9b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -143,53 +143,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\fl
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b7729e0f34a55277d1bbc924a2419444\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b7729e0f34a55277d1bbc924a2419444\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
 	android:requestLegacyExternalStorage
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:27:18-61
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:18-61
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\395dcef454f25521e51182a527203fae\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:31:9-35
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:31:9-35
 	android:label
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:30:9-41
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:30:9-41
 	android:icon
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:29:9-54
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:29:9-54
 	android:allowBackup
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:28:9-35
 	android:theme
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:32:9-40
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:32:9-40
 activity#io.aware.coala.MainActivity
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:34:9-40:20
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:9-40:20
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:34:19-61
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:19-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:38:17-77
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:27-74
 activity#io.aware.coala.assistant
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:noHistory
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:42:13-52
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:42:13-52
 activity#io.aware.coala.settings
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:44:9-60
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:9-60
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:44:19-57
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:19-57
 uses-library#org.apache.http.legacy
-ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:46:9-48:40
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:46:9-48:40
 	android:required
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:47:13-50
 uses-sdk
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cc34d95a588588eaffee9cf19d157ce5\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cc34d95a588588eaffee9cf19d157ce5\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\40cc99d105336259ba4d9547cb24f709\material-1.1.0\AndroidManifest.xml:20:5-44
@@ -204,8 +204,8 @@ MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.grad
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ffb313332791789fcd2b637d287c1ce6\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\14397f0b2740520cad2b503071a063db\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\14397f0b2740520cad2b503071a063db\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\81a32186a9da5bfe7161fc6a38ab642c\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\81a32186a9da5bfe7161fc6a38ab642c\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ecefe2fda3ad5151d6baba811c2668da\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ecefe2fda3ad5151d6baba811c2668da\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\623a0cacb15b964b559e6e46ccf53158\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\623a0cacb15b964b559e6e46ccf53158\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2184d643e3dc48ec088093bf4703920b\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -280,16 +280,16 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2ae806ece2580bf69becc3d2183e441c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ff8e00f72654800a11574b55f214c01b\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ff8e00f72654800a11574b55f214c01b\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\flozi\StudioProjects\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b7729e0f34a55277d1bbc924a2419444\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 	android:authorities

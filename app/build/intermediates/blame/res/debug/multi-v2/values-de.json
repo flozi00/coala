@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
+            "outputFile": "F:\\Codes\\Android Apps\\coala\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\flozi\\.gradle\\caches\\transforms-2\\files-2.1\\cc34d95a588588eaffee9cf19d157ce5\\navigation-ui-2.0.0\\res\\values-de\\values-de.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\flozi\\StudioProjects\\coala\\app\\src\\main\\res\\values-de\\strings.xml",
+                    "source": "F:\\Codes\\Android Apps\\coala\\app\\src\\main\\res\\values-de\\strings.xml",
                     "from": {
                         "startLines": "9,6,16,19,1,18,5,2,4,17,3",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
