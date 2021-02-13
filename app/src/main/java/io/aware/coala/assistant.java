@@ -131,7 +131,7 @@ public class assistant extends Activity {
             mediaPlayer.start();
 
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                int maxCount = 1;
+                int maxCount = 0;
                 int count = 0; // initialise outside listener to prevent looping
 
                 @Override
