@@ -78,6 +78,7 @@ public class assistant extends Activity {
             if(mymp3 != null){
                 try {
                     mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
+                    Toast.makeText(wakeContext, "read file", Toast.LENGTH_SHORT).show();
                 } catch(Exception e){
                     Toast.makeText(wakeContext, "error read file", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
