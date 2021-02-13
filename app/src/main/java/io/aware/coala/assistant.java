@@ -79,17 +79,20 @@ public class assistant extends Activity {
                 try {
                     mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
                 } catch(Exception e){
+                    Toast.makeText(wakeContext, "error read file", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                     AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
                     mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
                     descriptor.close();
                 }
             } else {
+                Toast.makeText(wakeContext, "default file", Toast.LENGTH_SHORT).show();
                 AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
                 mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
                 descriptor.close();
             }
         } catch(Exception e){
+            Toast.makeText(wakeContext, "no sound", Toast.LENGTH_SHORT).show();
             playSound = false;
         }
 
