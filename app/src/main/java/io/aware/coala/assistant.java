@@ -61,7 +61,7 @@ public class assistant extends Activity {
         sms_bool = pref.getBoolean("sms",false);
         call_bool = pref.getBoolean("call",false);
 
-        if(mp3.equals("mp3URI")){
+        if(!mp3.equals("mp3URI")){
             mymp3 = Uri.parse(mp3);
         }
 
@@ -103,20 +103,20 @@ public class assistant extends Activity {
 
     public void playAlarm(){
         try {
-
-            AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
             if(mymp3 != null){
                 try {
                     mediaPlayer.setDataSource(wakeContext, Uri.parse(mp3));
                 } catch(Exception e){
                     e.printStackTrace();
+                    AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
                     mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                    descriptor.close();
                 }
             } else {
+                AssetFileDescriptor descriptor = wakeContext.getAssets().openFd("alarm.mp3");
                 mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                descriptor.close();
             }
-
-            descriptor.close();
 
             AudioManager mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
             mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC), 0);
