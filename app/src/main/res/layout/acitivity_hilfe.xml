@@ -21,15 +21,26 @@
     tools:context=".MainActivity">
 
 
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/design_default_color_on_secondary"
+        android:text="@string/speak"
+        android:textColor="@android:color/white" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize">
+        android:paddingTop="?attr/actionBarSize"
+        android:visibility="gone">
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager"

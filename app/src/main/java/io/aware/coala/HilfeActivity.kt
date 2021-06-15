@@ -26,6 +26,7 @@ import android.os.Handler
 import android.os.HandlerThread
 import android.util.Log
 import android.view.WindowManager
+import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -54,6 +55,13 @@ class HilfeActivity : AppCompatActivity() {
         adapter = probabilitiesAdapter
       }
 
+    }
+
+    val btn_click_me = findViewById(R.id.button2) as Button
+    btn_click_me.setOnClickListener {
+      val intent = Intent(applicationContext, assistant::class.java)
+      intent.putExtra("forward", true)
+      startActivity(intent)
     }
 
     window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -106,8 +114,8 @@ class HilfeActivity : AppCompatActivity() {
         // Updating the UI
         runOnUiThread {
           probabilitiesAdapter.categoryList = filteredModelOutput
-          Log.i("inference", filteredModelOutput.toString())
           probabilitiesAdapter.notifyDataSetChanged()
+          Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "stop"){
               val intent = Intent(applicationContext, assistant::class.java)
