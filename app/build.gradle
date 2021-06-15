@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
@@ -26,12 +28,27 @@ android {
     packagingOptions {
         pickFirst 'lib/*/libopus.so'
     }
+
+    aaptOptions {
+        noCompress "tflite"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.0.0'
@@ -45,9 +62,23 @@ dependencies {
     implementation 'net.lingala.zip4j:zip4j:1.3.2'
 
     implementation 'org.tensorflow:tensorflow-lite-task-audio:0.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:1.5.0"
+    implementation "androidx.appcompat:appcompat:1.3.0"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "com.google.android.material:material:1.3.0"
+
+    implementation 'org.tensorflow:tensorflow-lite-task-audio:0.2.0'
 
 }
 configurations.all {
     // OkHttp 3.5.0+ includes the websockets API, so we need this to prevent a conflict
     exclude module: 'okhttp-ws'
+}
+repositories {
+    mavenCentral()
 }

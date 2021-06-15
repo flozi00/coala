@@ -42,6 +42,9 @@
             android:name="io.aware.coala.assistant"
             android:noHistory="true" />
         <activity android:name="io.aware.coala.settings" />
+        <activity
+            android:name="io.aware.coala.HilfeActivity"
+            android:noHistory="true" />
 
         <uses-library
             android:name="org.apache.http.legacy"

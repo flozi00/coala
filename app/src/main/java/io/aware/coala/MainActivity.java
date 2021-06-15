@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public Button settingsButton;
     public Button stopButton;
     public Button skillsButton;
-    public Button assistant;
+    public Button assistant, assistant_light;
     public TextView wakewordhint;
     public static Context mainContext;
     public WebView browser;
@@ -95,10 +95,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         assistant = findViewById(R.id.assistant);
-
         assistant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Intent intent = new Intent(getApplicationContext(), assistant.class);
+                Intent intent = new Intent(getApplicationContext(), HilfeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        assistant_light = findViewById(R.id.assistant_light);
+        assistant_light.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(getApplicationContext(), assistant.class);
                 Intent intent = new Intent(getApplicationContext(), assistant.class);
                 startActivity(intent);
             }

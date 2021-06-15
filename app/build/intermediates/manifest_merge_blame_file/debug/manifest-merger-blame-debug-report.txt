@@ -63,11 +63,11 @@
 28-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:25:22-75
 29
 30    <application
-30-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:5-49:19
+30-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:5-52:19
 31        android:allowBackup="true"
 31-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:28:9-35
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:24:18-86
+32-->[androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:24:18-86
 33        android:debuggable="true"
 34        android:extractNativeLibs="false"
 35        android:icon="@mipmap/ic_launcher_foreground"
@@ -78,49 +78,56 @@
 37-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:18-61
 38        android:supportsRtl="true"
 38-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:31:9-35
-39        android:theme="@style/AppTheme" >
-39-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:32:9-40
-40        <activity android:name="io.aware.coala.MainActivity" >
-40-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:9-40:20
-40-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:19-61
-41            <intent-filter>
-41-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:35:13-39:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:17-69
-42-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:17-77
-44-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity
-47-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:41:9-43:40
-48            android:name="io.aware.coala.assistant"
-48-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:42:13-52
-49            android:noHistory="true" />
-49-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:43:13-37
-50        <activity android:name="io.aware.coala.settings" />
-50-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:9-60
-50-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:19-57
-51
-52        <uses-library
-52-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:46:9-48:40
-53            android:name="org.apache.http.legacy"
-53-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:47:13-50
-54            android:required="false" />
-54-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:48:13-37
+39        android:testOnly="true"
+40        android:theme="@style/AppTheme" >
+40-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:32:9-40
+41        <activity android:name="io.aware.coala.MainActivity" >
+41-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:9-40:20
+41-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:34:19-61
+42            <intent-filter>
+42-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:35:13-39:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:17-69
+43-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:36:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:17-77
+45-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:38:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:41:9-43:40
+49            android:name="io.aware.coala.assistant"
+49-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:42:13-52
+50            android:noHistory="true" />
+50-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:43:13-37
+51        <activity android:name="io.aware.coala.settings" />
+51-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:9-60
+51-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:19-57
+52        <activity
+52-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:45:9-47:40
+53            android:name="io.aware.coala.HilfeActivity"
+53-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:46:13-56
+54            android:noHistory="true" />
+54-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:47:13-37
 55
-56        <provider
-56-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-57            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-57-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-58            android:authorities="io.aware.ava.lifecycle-process"
-58-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-59            android:exported="false"
-59-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-60            android:multiprocess="true" />
-60-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-61    </application>
-62
-63</manifest>
+56        <uses-library
+56-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:49:9-51:40
+57            android:name="org.apache.http.legacy"
+57-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:50:13-50
+58            android:required="false" />
+58-->F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:51:13-37
+59
+60        <provider
+60-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+61            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+62            android:authorities="io.aware.ava.lifecycle-process"
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+63            android:exported="false"
+63-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+64            android:multiprocess="true" />
+64-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+65    </application>
+66
+67</manifest>

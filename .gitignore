@@ -11,3 +11,8 @@
 /captures
 .externalNativeBuild
 .cxx
+*/dataset/*
+.vscode
+__pycache__
+tmp
+*/build/intermediates/*

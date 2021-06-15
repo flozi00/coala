@@ -1,74 +1,81 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7022ceb9e3de0f72d8ae9b76e027e807\navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\deeb075feedbe52ffb4e36f5b698af53\material-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\49a425eb020aa8d9cffc945a2839e23d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd5a17c1008fb18b92564321c063363b\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\647215dad2189bf7ccc8bedb88622434\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\73cefeb63682de8a7df8571f08f9db68\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd4d8444ff4d4a0723e75b10e699ea10\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d20c2f96433933b825ad09c4f678abf\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
-MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1a9f6f6c1e033b46dcc60ddc476ec529\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\939730d5a02951a4e6900dbf39441da5\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a6fa3c553e02b3a07c8a8565588eb54\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\596b40b0ab846efe12094cf291cb6fb8\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\26c27a93496e808418c6ce0af4a5e09c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f76237f51a0f7e63bcb3c74d5b185ef8\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ad61398286308039656eb09d36755285\media-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0692d1095c3ee6c76e49e9f2b5fe6de4\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3c5e939b0e6b29bdf460a7fe7fc8149e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4535ee444820ae18ff97d0ebf60d51c6\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3291651d58b009a1c2860d547f248169\transition-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\666ad058b1d9c3d7c4bdf80afbc3e64c\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a9578e6bb35b0664a235fe136bea7086\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\84abe344207c34d4a56c6167bf93e6d4\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f2d63b2c28ee1d548ef27f10c2385caa\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\36dcb862f7bd88dade6a96bc3b9a35c6\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\033c795406e41888727686d5fd780672\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8eb429c297537d6ea02c3f7824ce56bd\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9f97f489f2a5c174c803b63b463795b0\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c1469f5a2ad2b4764c3c283cf3fcf11\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9bda4bd38cbbd129d40467c328b01419\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f8b66fe459a5f610baa95a548f89d683\navigation-common-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5dbc57b58024a8f25b5db3778841ef05\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\18765b93ee4c46f41bb1a4f0caf56779\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\227916b3f0008a165e996ac0bce20467\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96d0ad977091c6484e2db42674538c87\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a82a1a22af6402c2242c9ee80e8919f\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fb5e65a69b576ac546080993fe26d407\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7b69e6173655717e69f5c7f6f1302d3b\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8fe2a3deec1ef3dd659aa5f55d73edd7\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\39d80e65ff1d0e1e4d512bf6d6475b4d\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dade9b59ee5981570bbd8ef7443af33a\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\27ffe024b65d36df19e13f551b6b146c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\512febfd0468b29d551bd267612a464f\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0917c2a590b553bc694d3bfa8ce10641\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:2:1-6:12
-MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c15d4220bcdbad72a9def5cc5784c959\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:2:1-5:12
-MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d144d7238cc096c429df8a8549f2e3cb\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:2:1-12:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f6b440f10da4a89c728b175230c4bb6f\jetified-viewbinding-4.1.3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\eabec08dff50581dbaeccbb639d67960\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b132caca892cd6e90594f544e6269d1a\navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fbd2f0cb80342c11dd41be4eeedd9b65\material-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e42214d6249c65b02e3ddbf4397ac19\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\518292574fb82b517fccf71f36194f5b\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\aebec6cdb3ed6384d53d53144d0bb5fd\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d1d2bd607f765964d0032e7eaac01a2\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\92d4be4bb194cf1443a691c46c0d4dd5\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\04dd50056ea32260150ee3b75493686d\jetified-core-ktx-1.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed9ead63687ceb48f1f7a31428daa45\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c35dfa42181a0bee3dae20a13306e444\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d0554e192ca23cdf5512656c843da2a\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e718c28315a73b416be2b0eefce9cc32\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\070b83aa08c5fc2cf4472652e3b05f51\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ab199f982b3caad5940ca9b5b6811f86\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2722c5b2747e41106dc222c6eff80539\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8661c2bf23fb4f9da3921edda089a360\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e707b3ab96054294eb25e4920b27ac7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b65efb27235a5dbec2f489e96d265df4\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3886870d29a081a808a1bc24bdb4b2cf\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c783d41b2df0da2a6c69b8ad2afb3fad\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4ab11a3077f3576ca6a6ef9619784c25\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b2f6e4cb2a9e998d0424fdbb9f364521\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c0f18b81fad000e1155e0953ae7cf01\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\11ad8c5ef6fc2d1d8fa2dd171e1882cb\fragment-1.3.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2c639f608b34b56691eafc44c193a3c0\jetified-activity-1.2.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96e533f4d61a2e53633d43eb39caa43c\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5b18a5eec077e19600fa73fdb68e5e45\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\85f0a3163b0cb27e66c4a9cf40cc980b\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c14141e242145cfefced264dcad8e9aa\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\194c17240d513ca92569dbf6677aff64\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c8d504c711483717d0d54e54389093d6\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ba03a7c6914980f9e1694cfab75135b\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\19b123f5e57be6f68c9720fef51905d1\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2008d6648e95aa6652a956c5f04bef1d\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f77b043036ea4c7c7232babc99223a14\navigation-common-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8456f88d154c4757b39f2f3abe2073eb\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\79c579f3d54bfe7277cdbac04c908807\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\69777d26bcab3be1a5dc21bc5fe19aa8\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8174c5900a64dea05436b0534dbadfda\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d98929147d74cd708e94ce613482538\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\37da7924480a7255a5ee3fa9ad90939b\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\47a56c1a263e8dc0c805bc2a7c60dca8\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3344314e1eac3f85012dfb26c2ab4696\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\05508741b7052e75fe8b55a4fe70be2f\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\87afc0ca20f8c6f4fee2820e3e8a141f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a5d8df54816ee29303639eacb1d5e2e7\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed5ad2bf48c228dfca4dc0427ed068b\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\488712a735a0f3f0192f79825886c1db\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d6d9858ca84ea96881b65029b1c9457\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cd2caea22f4469ab097c46b217fd481a\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:2:1-6:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b30e7c4acecc09d555c82b718cd63678\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\56450846ae7fc65d6ea812912c3af9c9\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:2:1-12:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
-		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
-		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:2:11-69
@@ -131,29 +138,29 @@ ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:25:5-78
 	android:name
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:25:22-75
 application
-ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:5-49:19
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\deeb075feedbe52ffb4e36f5b698af53\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\deeb075feedbe52ffb4e36f5b698af53\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd5a17c1008fb18b92564321c063363b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd5a17c1008fb18b92564321c063363b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd4d8444ff4d4a0723e75b10e699ea10\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd4d8444ff4d4a0723e75b10e699ea10\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d20c2f96433933b825ad09c4f678abf\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d20c2f96433933b825ad09c4f678abf\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0917c2a590b553bc694d3bfa8ce10641\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:4:4-5:18
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0917c2a590b553bc694d3bfa8ce10641\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:4:4-5:18
-MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d144d7238cc096c429df8a8549f2e3cb\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d144d7238cc096c429df8a8549f2e3cb\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fbd2f0cb80342c11dd41be4eeedd9b65\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fbd2f0cb80342c11dd41be4eeedd9b65\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\518292574fb82b517fccf71f36194f5b\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\518292574fb82b517fccf71f36194f5b\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\aebec6cdb3ed6384d53d53144d0bb5fd\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\aebec6cdb3ed6384d53d53144d0bb5fd\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed9ead63687ceb48f1f7a31428daa45\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed9ead63687ceb48f1f7a31428daa45\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a5d8df54816ee29303639eacb1d5e2e7\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a5d8df54816ee29303639eacb1d5e2e7\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cd2caea22f4469ab097c46b217fd481a\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\cd2caea22f4469ab097c46b217fd481a\jetified-tensorflow-lite-task-base-0.2.0\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\56450846ae7fc65d6ea812912c3af9c9\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\56450846ae7fc65d6ea812912c3af9c9\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
 	android:requestLegacyExternalStorage
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:27:18-61
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:31:9-35
 	android:label
@@ -188,112 +195,132 @@ activity#io.aware.coala.settings
 ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:9-60
 	android:name
 		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:44:19-57
-uses-library#org.apache.http.legacy
-ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:46:9-48:40
-	android:required
-		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:48:13-37
+activity#io.aware.coala.HilfeActivity
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:45:9-47:40
+	android:noHistory
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:46:13-56
+uses-library#org.apache.http.legacy
+ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:49:9-51:40
+	android:required
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:51:13-37
+	android:name
+		ADDED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml:50:13-50
 uses-sdk
 INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7022ceb9e3de0f72d8ae9b76e027e807\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7022ceb9e3de0f72d8ae9b76e027e807\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\deeb075feedbe52ffb4e36f5b698af53\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\deeb075feedbe52ffb4e36f5b698af53\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\49a425eb020aa8d9cffc945a2839e23d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\49a425eb020aa8d9cffc945a2839e23d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd5a17c1008fb18b92564321c063363b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd5a17c1008fb18b92564321c063363b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\647215dad2189bf7ccc8bedb88622434\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\647215dad2189bf7ccc8bedb88622434\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\73cefeb63682de8a7df8571f08f9db68\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\73cefeb63682de8a7df8571f08f9db68\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd4d8444ff4d4a0723e75b10e699ea10\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dd4d8444ff4d4a0723e75b10e699ea10\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d20c2f96433933b825ad09c4f678abf\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0d20c2f96433933b825ad09c4f678abf\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
-MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1a9f6f6c1e033b46dcc60ddc476ec529\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1a9f6f6c1e033b46dcc60ddc476ec529\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\939730d5a02951a4e6900dbf39441da5\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\939730d5a02951a4e6900dbf39441da5\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a6fa3c553e02b3a07c8a8565588eb54\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a6fa3c553e02b3a07c8a8565588eb54\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\596b40b0ab846efe12094cf291cb6fb8\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\596b40b0ab846efe12094cf291cb6fb8\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\26c27a93496e808418c6ce0af4a5e09c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\26c27a93496e808418c6ce0af4a5e09c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f76237f51a0f7e63bcb3c74d5b185ef8\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f76237f51a0f7e63bcb3c74d5b185ef8\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ad61398286308039656eb09d36755285\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ad61398286308039656eb09d36755285\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0692d1095c3ee6c76e49e9f2b5fe6de4\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0692d1095c3ee6c76e49e9f2b5fe6de4\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3c5e939b0e6b29bdf460a7fe7fc8149e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3c5e939b0e6b29bdf460a7fe7fc8149e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4535ee444820ae18ff97d0ebf60d51c6\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4535ee444820ae18ff97d0ebf60d51c6\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3291651d58b009a1c2860d547f248169\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3291651d58b009a1c2860d547f248169\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\666ad058b1d9c3d7c4bdf80afbc3e64c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\666ad058b1d9c3d7c4bdf80afbc3e64c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a9578e6bb35b0664a235fe136bea7086\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a9578e6bb35b0664a235fe136bea7086\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\84abe344207c34d4a56c6167bf93e6d4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\84abe344207c34d4a56c6167bf93e6d4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f2d63b2c28ee1d548ef27f10c2385caa\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f2d63b2c28ee1d548ef27f10c2385caa\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\36dcb862f7bd88dade6a96bc3b9a35c6\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\36dcb862f7bd88dade6a96bc3b9a35c6\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\033c795406e41888727686d5fd780672\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\033c795406e41888727686d5fd780672\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8eb429c297537d6ea02c3f7824ce56bd\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8eb429c297537d6ea02c3f7824ce56bd\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9f97f489f2a5c174c803b63b463795b0\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9f97f489f2a5c174c803b63b463795b0\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c1469f5a2ad2b4764c3c283cf3fcf11\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c1469f5a2ad2b4764c3c283cf3fcf11\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9bda4bd38cbbd129d40467c328b01419\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9bda4bd38cbbd129d40467c328b01419\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f8b66fe459a5f610baa95a548f89d683\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f8b66fe459a5f610baa95a548f89d683\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5dbc57b58024a8f25b5db3778841ef05\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5dbc57b58024a8f25b5db3778841ef05\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\18765b93ee4c46f41bb1a4f0caf56779\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\18765b93ee4c46f41bb1a4f0caf56779\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\227916b3f0008a165e996ac0bce20467\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\227916b3f0008a165e996ac0bce20467\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96d0ad977091c6484e2db42674538c87\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96d0ad977091c6484e2db42674538c87\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a82a1a22af6402c2242c9ee80e8919f\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9a82a1a22af6402c2242c9ee80e8919f\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fb5e65a69b576ac546080993fe26d407\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fb5e65a69b576ac546080993fe26d407\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7b69e6173655717e69f5c7f6f1302d3b\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\7b69e6173655717e69f5c7f6f1302d3b\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8fe2a3deec1ef3dd659aa5f55d73edd7\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8fe2a3deec1ef3dd659aa5f55d73edd7\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\39d80e65ff1d0e1e4d512bf6d6475b4d\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\39d80e65ff1d0e1e4d512bf6d6475b4d\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dade9b59ee5981570bbd8ef7443af33a\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\dade9b59ee5981570bbd8ef7443af33a\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\27ffe024b65d36df19e13f551b6b146c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\27ffe024b65d36df19e13f551b6b146c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\512febfd0468b29d551bd267612a464f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\512febfd0468b29d551bd267612a464f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c15d4220bcdbad72a9def5cc5784c959\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c15d4220bcdbad72a9def5cc5784c959\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d144d7238cc096c429df8a8549f2e3cb\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d144d7238cc096c429df8a8549f2e3cb\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:7:5-8:41
+MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f6b440f10da4a89c728b175230c4bb6f\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f6b440f10da4a89c728b175230c4bb6f\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\eabec08dff50581dbaeccbb639d67960\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\eabec08dff50581dbaeccbb639d67960\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b132caca892cd6e90594f544e6269d1a\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b132caca892cd6e90594f544e6269d1a\navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fbd2f0cb80342c11dd41be4eeedd9b65\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\fbd2f0cb80342c11dd41be4eeedd9b65\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e42214d6249c65b02e3ddbf4397ac19\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e42214d6249c65b02e3ddbf4397ac19\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\518292574fb82b517fccf71f36194f5b\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\518292574fb82b517fccf71f36194f5b\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\aebec6cdb3ed6384d53d53144d0bb5fd\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\aebec6cdb3ed6384d53d53144d0bb5fd\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d1d2bd607f765964d0032e7eaac01a2\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [org.tensorflow:tensorflow-lite-task-audio:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d1d2bd607f765964d0032e7eaac01a2\jetified-tensorflow-lite-task-audio-0.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\92d4be4bb194cf1443a691c46c0d4dd5\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\92d4be4bb194cf1443a691c46c0d4dd5\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\04dd50056ea32260150ee3b75493686d\jetified-core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\04dd50056ea32260150ee3b75493686d\jetified-core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed9ead63687ceb48f1f7a31428daa45\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed9ead63687ceb48f1f7a31428daa45\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c35dfa42181a0bee3dae20a13306e444\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c35dfa42181a0bee3dae20a13306e444\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d0554e192ca23cdf5512656c843da2a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d0554e192ca23cdf5512656c843da2a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e718c28315a73b416be2b0eefce9cc32\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\e718c28315a73b416be2b0eefce9cc32\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\070b83aa08c5fc2cf4472652e3b05f51\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\070b83aa08c5fc2cf4472652e3b05f51\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ab199f982b3caad5940ca9b5b6811f86\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\ab199f982b3caad5940ca9b5b6811f86\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2722c5b2747e41106dc222c6eff80539\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2722c5b2747e41106dc222c6eff80539\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8661c2bf23fb4f9da3921edda089a360\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8661c2bf23fb4f9da3921edda089a360\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e707b3ab96054294eb25e4920b27ac7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\0e707b3ab96054294eb25e4920b27ac7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b65efb27235a5dbec2f489e96d265df4\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b65efb27235a5dbec2f489e96d265df4\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3886870d29a081a808a1bc24bdb4b2cf\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3886870d29a081a808a1bc24bdb4b2cf\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c783d41b2df0da2a6c69b8ad2afb3fad\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c783d41b2df0da2a6c69b8ad2afb3fad\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4ab11a3077f3576ca6a6ef9619784c25\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\4ab11a3077f3576ca6a6ef9619784c25\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b2f6e4cb2a9e998d0424fdbb9f364521\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b2f6e4cb2a9e998d0424fdbb9f364521\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c0f18b81fad000e1155e0953ae7cf01\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\9c0f18b81fad000e1155e0953ae7cf01\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\11ad8c5ef6fc2d1d8fa2dd171e1882cb\fragment-1.3.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\11ad8c5ef6fc2d1d8fa2dd171e1882cb\fragment-1.3.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2c639f608b34b56691eafc44c193a3c0\jetified-activity-1.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2c639f608b34b56691eafc44c193a3c0\jetified-activity-1.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96e533f4d61a2e53633d43eb39caa43c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\96e533f4d61a2e53633d43eb39caa43c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5b18a5eec077e19600fa73fdb68e5e45\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5b18a5eec077e19600fa73fdb68e5e45\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\85f0a3163b0cb27e66c4a9cf40cc980b\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\85f0a3163b0cb27e66c4a9cf40cc980b\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c14141e242145cfefced264dcad8e9aa\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c14141e242145cfefced264dcad8e9aa\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\194c17240d513ca92569dbf6677aff64\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\194c17240d513ca92569dbf6677aff64\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c8d504c711483717d0d54e54389093d6\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\c8d504c711483717d0d54e54389093d6\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ba03a7c6914980f9e1694cfab75135b\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ba03a7c6914980f9e1694cfab75135b\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\19b123f5e57be6f68c9720fef51905d1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\19b123f5e57be6f68c9720fef51905d1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2008d6648e95aa6652a956c5f04bef1d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\2008d6648e95aa6652a956c5f04bef1d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f77b043036ea4c7c7232babc99223a14\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\f77b043036ea4c7c7232babc99223a14\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\acd3221d92f8f72e42cfac80c35261a4\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8456f88d154c4757b39f2f3abe2073eb\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8456f88d154c4757b39f2f3abe2073eb\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\79c579f3d54bfe7277cdbac04c908807\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\79c579f3d54bfe7277cdbac04c908807\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\69777d26bcab3be1a5dc21bc5fe19aa8\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\69777d26bcab3be1a5dc21bc5fe19aa8\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8174c5900a64dea05436b0534dbadfda\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8174c5900a64dea05436b0534dbadfda\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d98929147d74cd708e94ce613482538\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\5d98929147d74cd708e94ce613482538\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\37da7924480a7255a5ee3fa9ad90939b\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\37da7924480a7255a5ee3fa9ad90939b\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\47a56c1a263e8dc0c805bc2a7c60dca8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\47a56c1a263e8dc0c805bc2a7c60dca8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3344314e1eac3f85012dfb26c2ab4696\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3344314e1eac3f85012dfb26c2ab4696\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\05508741b7052e75fe8b55a4fe70be2f\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\05508741b7052e75fe8b55a4fe70be2f\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\87afc0ca20f8c6f4fee2820e3e8a141f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\87afc0ca20f8c6f4fee2820e3e8a141f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a5d8df54816ee29303639eacb1d5e2e7\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\a5d8df54816ee29303639eacb1d5e2e7\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed5ad2bf48c228dfca4dc0427ed068b\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\3ed5ad2bf48c228dfca4dc0427ed068b\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\488712a735a0f3f0192f79825886c1db\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\488712a735a0f3f0192f79825886c1db\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d6d9858ca84ea96881b65029b1c9457\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\1d6d9858ca84ea96881b65029b1c9457\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b30e7c4acecc09d555c82b718cd63678\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.2.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\b30e7c4acecc09d555c82b718cd63678\jetified-tensorflow-lite-support-0.2.0\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\56450846ae7fc65d6ea812912c3af9c9\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\56450846ae7fc65d6ea812912c3af9c9\jetified-tensorflow-lite-2.4.0\AndroidManifest.xml:7:5-8:41
 INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -306,12 +333,12 @@ INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 		MERGED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Codes\Android Apps\coala\app\src\main\AndroidManifest.xml
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\8beb6135ea053f74482277854952e4d8\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\flozi\.gradle\caches\transforms-2\files-2.1\d9385fd0a1ff6ef894ed679a81024a0d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79

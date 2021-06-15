@@ -57,6 +57,19 @@
             android:text="Aktivieren"
             android:textColor="@color/colorAccent" />
 
+        <Button
+            android:id="@+id/assistant_light"
+            style="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="2dp"
+            android:background="#FFFFFF"
+            android:text="Aktivieren (touch only)"
+            android:textColor="@color/colorAccent" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
