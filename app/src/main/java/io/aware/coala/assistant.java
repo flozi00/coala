@@ -8,14 +8,20 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.AssetFileDescriptor;
 import android.media.AudioManager;
+import android.media.AudioRecord;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
+import android.util.TimingLogger;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
+import android.os.Handler;
+import android.widget.Toast;
+
 
 
 import com.android.volley.Request;
@@ -26,6 +32,15 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import androidx.core.app.ActivityCompat;
+
+import org.tensorflow.lite.support.audio.TensorAudio;
+import org.tensorflow.lite.task.audio.classifier.AudioClassifier;
+import org.tensorflow.lite.task.audio.classifier.Classifications;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class assistant extends Activity {
@@ -41,6 +56,13 @@ public class assistant extends Activity {
     public boolean alarm_bool, api_bool, sms_bool, call_bool;
 
     public long lastCall = 0;
+
+    Handler handler = new Handler();
+    Runnable r;
+    public String MODEL_FILE = "model_meta.tflite";
+    public TensorAudio audioTensor;
+    public AudioClassifier classifier;
+    public AudioRecord record;
 
 
     @Override
@@ -73,6 +95,50 @@ public class assistant extends Activity {
             }
         });
 
+        // Initialization
+        try {
+            classifier = AudioClassifier.createFromFile(wakeContext, MODEL_FILE);
+            audioTensor = classifier.createInputTensorAudio();
+            record = classifier.createAudioRecord();
+            record.startRecording();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+        handler = new Handler();
+
+        r = new Runnable() {
+            public void run() {
+                do_inference();
+                handler.postDelayed(this, 1000);
+            }
+        };
+
+        handler.postDelayed(r, 1000);
+
+    }
+
+    void do_inference(){
+        audioTensor.load(record);
+        List<Classifications> results = classifier.classify(audioTensor);
+
+        for (int i=0; i<results.get(0).getCategories().size(); i++) {
+            if(results.get(0).getCategories().get(i).getScore() > 0.7){
+                Toast.makeText(wakeContext, results.get(0).getCategories().get(i).getLabel(),
+                        Toast.LENGTH_SHORT).show();
+
+                Log.i("inference",results.get(0).getCategories().get(i).getLabel());
+            }
+        }
+
+    }
+
+    @Override
+    protected void onPause() {
+        handler.removeCallbacks(r); //stop handler when activity not visible super.onPause();
+        super.onPause();
     }
 
     public void callAPI(){
