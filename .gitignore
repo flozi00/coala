@@ -16,3 +16,5 @@
 __pycache__
 tmp
 */build/intermediates/*
+*/build/generated/*
+*/build/kotlin/*
