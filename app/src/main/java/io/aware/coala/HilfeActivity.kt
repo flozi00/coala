@@ -120,8 +120,8 @@ class HilfeActivity : AppCompatActivity() {
           Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
-              if(firstTrigger - System.currentTimeMillis() < 10000){
-                if(firstTrigger - System.currentTimeMillis() > 1000){
+              if(firstTrigger - System.currentTimeMillis() <= 10000){
+                if(firstTrigger - System.currentTimeMillis() >= 1000){
                   val intent = Intent(applicationContext, assistant::class.java)
                   intent.putExtra("forward", true)
                   startActivity(intent)
