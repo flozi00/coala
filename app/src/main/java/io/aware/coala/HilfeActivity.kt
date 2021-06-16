@@ -121,7 +121,7 @@ class HilfeActivity : AppCompatActivity() {
           Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
-              var difference = firstTrigger - System.currentTimeMillis()
+              var difference = System.currentTimeMillis() - firstTrigger
               if(difference <= 10000){
                 if(difference >= 1000){
                   val intent = Intent(applicationContext, assistant::class.java)
@@ -129,7 +129,7 @@ class HilfeActivity : AppCompatActivity() {
                   startActivity(intent)
                 }
               }
-              Toast.makeText(applicationContext,"audio trigger recognized: " + difference.toString(), Toast.LENGTH_SHORT).show()
+              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
             }
