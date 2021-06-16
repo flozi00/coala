@@ -7,7 +7,7 @@ from tqdm.auto import tqdm
 import os
 
 augment = Compose([
-    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.001, p=0.3),
+    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.0003, p=0.3),
     PitchShift(min_semitones=-0.3, max_semitones=0.5, p=0.6),
     Gain(min_gain_in_db=-17, max_gain_in_db=3, p=0.7),
 ])
