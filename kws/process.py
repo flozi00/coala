@@ -7,9 +7,9 @@ from tqdm.auto import tqdm
 import os
 
 augment = Compose([
-    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.0003, p=0.3),
+    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.0003, p=0.7),
     PitchShift(min_semitones=-0.3, max_semitones=0.5, p=0.6),
-    Gain(min_gain_in_db=-17, max_gain_in_db=3, p=0.7),
+    Gain(min_gain_in_db=-3, max_gain_in_db=4, p=0.7),
 ])
 
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
@@ -34,12 +34,17 @@ for f in tqdm(other_list):
                     print(chunk_name)
                     chunk.export(chunk_name, format="wav")
 
-print(len(list(glob.glob('dataset/data/other/*.wav', recursive=True))))
+other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
+print(len(other_list))
 
+hilfe_raw = 0
+for f in tqdm(hilfe_list):
+    if(f.endswith('augmented.wav') == False):
+        hilfe_raw += 1
 
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
-        for x in range(50):
+        for x in range(int((len(other_list)/hilfe_raw)/10)):
             speech_array, sampling_rate = sf.read(f)
             speech_array = augment(samples=speech_array, sample_rate=sampling_rate)
             sf.write(f"{f}{x}_augmented.wav", speech_array, sampling_rate, subtype='PCM_16')

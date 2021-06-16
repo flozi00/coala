@@ -66,7 +66,7 @@ def meta(export_dir):
   # Task Library expects label files that are in the same format as the one below.
   _LABEL_FILE = export_dir + "labels.txt"
   # Expected sampling rate of the input audio buffer.
-  _SAMPLE_RATE = 16000 #44100
+  _SAMPLE_RATE = 44100
   # Expected number of channels of the input audio buffer. Note, Task library only
   # support single channel so far.
   _CHANNELS = 1
