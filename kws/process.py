@@ -7,9 +7,9 @@ from tqdm.auto import tqdm
 import os
 
 augment = Compose([
-    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.001, p=0.6),
-    PitchShift(min_semitones=-0.3, max_semitones=1.5, p=0.6),
-    Gain(min_gain_in_db=-18, max_gain_in_db=4, p=0.7),
+    AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.001, p=0.3),
+    PitchShift(min_semitones=-0.3, max_semitones=0.5, p=0.6),
+    Gain(min_gain_in_db=-17, max_gain_in_db=3, p=0.7),
 ])
 
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
@@ -29,8 +29,9 @@ for f in tqdm(other_list):
             chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
 
             for i, chunk in enumerate(chunks):
-                if(i < 100):
+                if(i < 10000):
                     chunk_name = f + "chunk{0}.wav".format(i)
+                    print(chunk_name)
                     chunk.export(chunk_name, format="wav")
 
 print(len(list(glob.glob('dataset/data/other/*.wav', recursive=True))))
@@ -38,7 +39,7 @@ print(len(list(glob.glob('dataset/data/other/*.wav', recursive=True))))
 
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
-        for x in range(35):
+        for x in range(50):
             speech_array, sampling_rate = sf.read(f)
             speech_array = augment(samples=speech_array, sample_rate=sampling_rate)
             sf.write(f"{f}{x}_augmented.wav", speech_array, sampling_rate, subtype='PCM_16')
