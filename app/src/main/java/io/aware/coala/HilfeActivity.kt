@@ -92,6 +92,7 @@ class HilfeActivity : AppCompatActivity() {
     // Initialize the audio recorder
     val record = classifier.createAudioRecord()
     record.startRecording()
+    firstTrigger = System.currentTimeMillis()
 
     // Define the classification runnable
     val run = object : Runnable {
@@ -120,14 +121,15 @@ class HilfeActivity : AppCompatActivity() {
           Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
-              if(firstTrigger - System.currentTimeMillis() <= 10000){
-                if(firstTrigger - System.currentTimeMillis() >= 1000){
+              var difference = firstTrigger - System.currentTimeMillis()
+              if(difference <= 10000){
+                if(difference >= 1000){
                   val intent = Intent(applicationContext, assistant::class.java)
                   intent.putExtra("forward", true)
                   startActivity(intent)
                 }
               }
-              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
+              Toast.makeText(applicationContext,"audio trigger recognized: " + difference.toString(), Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
             }
