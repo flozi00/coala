@@ -27,6 +27,7 @@ import android.os.HandlerThread
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -126,6 +127,8 @@ class HilfeActivity : AppCompatActivity() {
                   startActivity(intent)
                 }
               }
+              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
+
               firstTrigger = System.currentTimeMillis()
             }
           }
