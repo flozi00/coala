@@ -42,6 +42,7 @@ class HilfeActivity : AppCompatActivity() {
   private var audioRecord: AudioRecord? = null
   private var classificationInterval = 500L // how often should classification run in milli-secs
   private lateinit var handler: Handler // background thread handler to run classification
+  public var firstTrigger = 0.0.toLong()
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -118,9 +119,14 @@ class HilfeActivity : AppCompatActivity() {
           Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
-              val intent = Intent(applicationContext, assistant::class.java)
-              intent.putExtra("forward", true)
-              startActivity(intent)
+              if(firstTrigger - System.currentTimeMillis() < 10000){
+                if(firstTrigger - System.currentTimeMillis() > 1000){
+                  val intent = Intent(applicationContext, assistant::class.java)
+                  intent.putExtra("forward", true)
+                  startActivity(intent)
+                }
+              }
+              firstTrigger = System.currentTimeMillis()
             }
           }
 

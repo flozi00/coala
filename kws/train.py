@@ -92,7 +92,7 @@ def main(_):
 
   data_dir = os.path.expanduser("./dataset/data")
 
-  #run("audio_browser_fft", data_dir, export_dir=export_dir)
+  run("audio_browser_fft", data_dir, export_dir=export_dir)
 
   meta(export_dir)
 
