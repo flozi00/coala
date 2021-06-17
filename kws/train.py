@@ -34,8 +34,8 @@ import process
 def run(spec,
         data_dir,
         export_dir,
-        epochs=1,
-        batch_size=32,
+        epochs=5,
+        batch_size=24,
         **kwargs):
   """Runs demo."""
   spec = model_spec.get(spec)

@@ -15,6 +15,7 @@ augment = Compose([
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
 hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
 
+print("Other")
 for f in tqdm(other_list):
     if("wavchunk" in f):
         try:
@@ -25,23 +26,31 @@ for f in tqdm(other_list):
     else:
         myaudio = AudioSegment.from_file(f , "wav") 
         if(myaudio.duration_seconds > 5):
+            print(f)
             chunk_length_ms = 1000 # pydub calculates in millisec
             chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
 
             for i, chunk in enumerate(chunks):
                 if(i < 10000):
                     chunk_name = f + "chunk{0}.wav".format(i)
-                    print(chunk_name)
                     chunk.export(chunk_name, format="wav")
 
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
-print(len(other_list))
 
 hilfe_raw = 0
+print("clean hilfe")
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
         hilfe_raw += 1
+    else:
+        try:
+            os.remove(f)
+        except:
+            pass
 
+hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
+
+print("process hilfe")
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
         for x in range(int((len(other_list)/hilfe_raw)/2)):
@@ -49,4 +58,6 @@ for f in tqdm(hilfe_list):
             speech_array = augment(samples=speech_array, sample_rate=sampling_rate)
             sf.write(f"{f}{x}_augmented.wav", speech_array, sampling_rate, subtype='PCM_16')
 
+
+print(len(other_list))
 print(len(list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))))
