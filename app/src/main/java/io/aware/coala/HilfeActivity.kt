@@ -132,6 +132,8 @@ class HilfeActivity : AppCompatActivity() {
                     startActivity(intent)
                   }
                 }
+              } else {
+                triggerCount = 0
               }
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
