@@ -1,4 +1,4 @@
-#Wed Jun 16 22:48:28 CEST 2021
+#Thu Jun 17 08:56:32 CEST 2021
 base.0=F\:\\Codes\\Android Apps\\coala\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
