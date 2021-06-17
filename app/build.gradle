@@ -9,7 +9,7 @@ android {
         applicationId "io.aware.coala"
         minSdkVersion 24
         targetSdkVersion 29
-        versionCode 38
+        versionCode 1
         versionName "0.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
