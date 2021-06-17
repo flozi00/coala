@@ -133,7 +133,7 @@ class HilfeActivity : AppCompatActivity() {
                   }
                 }
               } else {
-                triggerCount = 0
+                triggerCount = 1
               }
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
