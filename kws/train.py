@@ -46,7 +46,7 @@ def run(spec,
 
 
   print('\nTraining the model')
-  model = audio_classifier.create(train_data, spec, rest_data, batch_size=batch_size, epochs=epochs, **kwargs)
+  model = audio_classifier.create(train_data, spec, rest_data, batch_size=batch_size, epochs=epochs,train_whole_model=True, **kwargs)
 
   #print('\nEvaluating the model')
   #model.evaluate(test_data)

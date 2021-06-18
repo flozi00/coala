@@ -2,7 +2,7 @@ from pydub import AudioSegment
 from pydub.utils import make_chunks
 import glob
 import soundfile as sf
-from audiomentations import Compose, AddGaussianNoise, Gain, PitchShift
+from audiomentations import Compose, AddGaussianNoise, Gain, PitchShift, AddBackgroundNoise
 from tqdm.auto import tqdm
 import os
 
@@ -10,12 +10,13 @@ augment = Compose([
     AddGaussianNoise(min_amplitude=0.0001, max_amplitude=0.0003, p=0.2),
     PitchShift(min_semitones=-0.3, max_semitones=0.5, p=0.4),
     Gain(min_gain_in_db=-2, max_gain_in_db=4, p=0.6),
+    AddBackgroundNoise(sounds_path='dataset/data/other/', min_snr_in_db=3, max_snr_in_db=12, p=0.9)
 ])
 
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
 hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
 
-for f in other_list + hilfe_list:
+for f in tqdm(other_list + hilfe_list):
     array, sr = sf.read(f)
     condition = sr == 16000
     if not condition:
@@ -44,12 +45,9 @@ for f in tqdm(other_list):
 
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
 
-hilfe_raw = 0
 print("clean hilfe")
 for f in tqdm(hilfe_list):
-    if(f.endswith('augmented.wav') == False):
-        hilfe_raw += 1
-    else:
+    if(f.endswith('augmented.wav') != False):
         try:
             os.remove(f)
         except:
@@ -60,7 +58,7 @@ hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
 print("process hilfe")
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
-        for x in range(int((len(other_list)/hilfe_raw)/5)):
+        for x in range(int(len(other_list) / len(hilfe_list)/2)):
             speech_array, sampling_rate = sf.read(f)
             speech_array = augment(samples=speech_array, sample_rate=sampling_rate)
             sf.write(f"{f}{x}_augmented.wav", speech_array, sampling_rate, subtype='PCM_16')
