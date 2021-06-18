@@ -15,6 +15,13 @@ augment = Compose([
 other_list = list(glob.glob('dataset/data/other/*.wav', recursive=True))
 hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
 
+for f in other_list + hilfe_list:
+    array, sr = sf.read(f)
+    condition = sr == 16000
+    if not condition:
+        print(f)
+        raise AssertionError()
+
 print("Other")
 for f in tqdm(other_list):
     if("wavchunk" in f):
@@ -53,7 +60,7 @@ hilfe_list = list(glob.glob('dataset/data/hilfe/*.wav', recursive=True))
 print("process hilfe")
 for f in tqdm(hilfe_list):
     if(f.endswith('augmented.wav') == False):
-        for x in range(int((len(other_list)/hilfe_raw)/10)):
+        for x in range(int((len(other_list)/hilfe_raw)/5)):
             speech_array, sampling_rate = sf.read(f)
             speech_array = augment(samples=speech_array, sample_rate=sampling_rate)
             sf.write(f"{f}{x}_augmented.wav", speech_array, sampling_rate, subtype='PCM_16')
