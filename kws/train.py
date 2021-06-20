@@ -16,6 +16,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import process
+
 import os
 import shutil
 
@@ -28,14 +30,12 @@ from tflite_model_maker import model_spec
 from tflite_support.metadata_writers import audio_classifier as audio_classifier_writer
 from tflite_support.metadata_writers import writer_utils
 
-import process
-
 
 def run(spec,
         data_dir,
         export_dir,
         epochs=10,
-        batch_size=8,
+        batch_size=32,
         **kwargs):
   """Runs demo."""
   spec = model_spec.get(spec)
@@ -48,16 +48,15 @@ def run(spec,
   print('\nTraining the model')
   model = audio_classifier.create(train_data, spec, rest_data, batch_size=batch_size, epochs=epochs,train_whole_model=True, **kwargs)
 
-  #print('\nEvaluating the model')
-  #model.evaluate(test_data)
+  print('\nExporing the Saved model and TFLite model to {}'.format(export_dir))
+  model.export(
+      export_dir, export_format=(ExportFormat.TFLITE, ExportFormat.LABEL))
+
+  meta(export_dir)
 
   print('\nConfusion matrix: ')
   print(model.confusion_matrix(rest_data))
   print('labels: ', rest_data.index_to_label)
-
-  print('\nExporing the Saved model and TFLite model to {}'.format(export_dir))
-  model.export(
-      export_dir, export_format=(ExportFormat.TFLITE, ExportFormat.LABEL))
   
 
 def meta(export_dir):
@@ -94,7 +93,6 @@ def main(_):
 
   run("audio_browser_fft", data_dir, export_dir=export_dir)
 
-  meta(export_dir)
 
 if __name__ == '__main__':
   app.run(main)

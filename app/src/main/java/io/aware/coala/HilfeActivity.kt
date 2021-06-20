@@ -189,6 +189,6 @@ class HilfeActivity : AppCompatActivity() {
     const val REQUEST_RECORD_AUDIO = 1337
     private const val TAG = "AudioDemo"
     private const val MODEL_FILE = "model_meta.tflite"
-    private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.7f
+    private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.8f
   }
 }
