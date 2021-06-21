@@ -32,8 +32,17 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.os.HandlerCompat
+import androidx.lifecycle.lifecycleScope
 import io.aware.coala.databinding.AcitivityHilfeBinding
+import kotlinx.coroutines.launch
+import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier
+import java.io.InputStream
+import java.util.*
 
 
 class HilfeActivity : AppCompatActivity() {
@@ -45,6 +54,8 @@ class HilfeActivity : AppCompatActivity() {
   private lateinit var handler: Handler // background thread handler to run classification
   public var firstTrigger = 0.0.toLong()
   public var triggerCount = 0
+
+  private lateinit var api: RemoteApi //remote api Instance
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -59,6 +70,8 @@ class HilfeActivity : AppCompatActivity() {
       }
 
     }
+     //initialize api
+    api = RemoteApi.invoke()
 
     val btn_click_me = findViewById(R.id.button2) as Button
     btn_click_me.setOnClickListener {
@@ -138,6 +151,10 @@ class HilfeActivity : AppCompatActivity() {
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
+
+                lifecycleScope.launch {
+                    //todo upload file here
+                }
             }
           }
 
@@ -183,6 +200,18 @@ class HilfeActivity : AppCompatActivity() {
     } else {
       requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), REQUEST_RECORD_AUDIO)
     }
+  }
+
+  suspend fun uploadAudioToServer(stream: InputStream){
+    val part = MultipartBody.Part.createFormData(
+      "audio",
+      UUID.randomUUID().toString() + ".wav",
+        stream.readBytes()
+            .toRequestBody(
+                "audio/wav".toMediaTypeOrNull(),
+                0, stream.readBytes().size
+            )
+    )
   }
 
   companion object {
