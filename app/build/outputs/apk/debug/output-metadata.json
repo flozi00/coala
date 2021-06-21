@@ -5,7 +5,7 @@
     "kind": "Directory"
   },
   "applicationId": "io.aware.coala",
-  "variantName": "processDebugResources",
+  "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",
