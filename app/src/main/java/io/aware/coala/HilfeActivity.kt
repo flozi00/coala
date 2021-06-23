@@ -132,6 +132,12 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
           probabilitiesAdapter.categoryList = filteredModelOutput
           probabilitiesAdapter.notifyDataSetChanged()
           Log.i("inference", filteredModelOutput.toString())
+          try {
+            speech.stopListening()
+          } catch (e: Exception){
+
+          }
+          speech.startListening(recognizerIntent)
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
               /*
@@ -151,13 +157,6 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
-
-              try {
-                speech.stopListening()
-              } catch (e: Exception){
-
-              }
-              speech.startListening(recognizerIntent)
 
             }
           }
@@ -214,27 +213,21 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
   }
 
   override fun onReadyForSpeech(p0: Bundle?) {
-    TODO("Not yet implemented")
   }
 
   override fun onBeginningOfSpeech() {
-    TODO("Not yet implemented")
   }
 
   override fun onRmsChanged(p0: Float) {
-    TODO("Not yet implemented")
   }
 
   override fun onBufferReceived(p0: ByteArray?) {
-    TODO("Not yet implemented")
   }
 
   override fun onEndOfSpeech() {
-    TODO("Not yet implemented")
   }
 
   override fun onError(p0: Int) {
-    TODO("Not yet implemented")
   }
 
 
@@ -248,11 +241,9 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
   }
 
   override fun onPartialResults(p0: Bundle?) {
-    TODO("Not yet implemented")
   }
 
   override fun onEvent(p0: Int, p1: Bundle?) {
-    TODO("Not yet implemented")
   }
 
 
