@@ -132,12 +132,7 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
           probabilitiesAdapter.categoryList = filteredModelOutput
           probabilitiesAdapter.notifyDataSetChanged()
           Log.i("inference", filteredModelOutput.toString())
-          try {
-            speech.stopListening()
-          } catch (e: Exception){
 
-          }
-          speech.startListening(recognizerIntent)
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
               /*
@@ -157,6 +152,13 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
+
+              try {
+                speech.stopListening()
+              } catch (e: Exception){
+
+              }
+              speech.startListening(recognizerIntent)
 
             }
           }
