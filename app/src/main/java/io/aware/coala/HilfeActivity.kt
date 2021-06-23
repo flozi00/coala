@@ -149,7 +149,6 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
               } else {
                 triggerCount = 1
               } */
-              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
 
@@ -218,6 +217,7 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
   }
 
   override fun onBeginningOfSpeech() {
+    Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
   }
 
   override fun onRmsChanged(p0: Float) {
@@ -227,6 +227,7 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
   }
 
   override fun onEndOfSpeech() {
+    Toast.makeText(applicationContext,"stopped listening", Toast.LENGTH_SHORT).show()
   }
 
   override fun onError(p0: Int) {
