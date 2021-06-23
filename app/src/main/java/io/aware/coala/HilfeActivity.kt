@@ -17,6 +17,8 @@
 package io.aware.coala
 
 import android.Manifest
+import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.AudioRecord
@@ -24,6 +26,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
+import android.speech.RecognizerIntent
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Button
@@ -34,6 +37,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.os.HandlerCompat
 import io.aware.coala.databinding.AcitivityHilfeBinding
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier
+import java.util.*
 
 
 class HilfeActivity : AppCompatActivity() {
@@ -122,6 +126,7 @@ class HilfeActivity : AppCompatActivity() {
           Log.i("inference", filteredModelOutput.toString())
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
+              /*
               var difference = System.currentTimeMillis() - firstTrigger
               if(difference <= 10000){
                 if(difference >= 1000){
@@ -134,10 +139,24 @@ class HilfeActivity : AppCompatActivity() {
                 }
               } else {
                 triggerCount = 1
-              }
+              } */
               Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
+
+              val sttIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+              sttIntent.putExtra(
+                      RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                      RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+              )
+              sttIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
+              sttIntent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Listening")
+
+              try {
+                startActivityForResult(sttIntent, 1)
+              } catch (e: ActivityNotFoundException) {
+                e.printStackTrace()
+              }
             }
           }
 
@@ -191,4 +210,24 @@ class HilfeActivity : AppCompatActivity() {
     private const val MODEL_FILE = "model_meta.tflite"
     private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.7f
   }
+
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+    when (requestCode) {
+      1 -> {
+        if (resultCode == Activity.RESULT_OK && data != null) {
+          val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+          result?.let {
+            val recognizedText = it[0].toString().toLowerCase()
+            if(recognizedText.contains("hilfe")){
+              val intent = Intent(applicationContext, assistant::class.java)
+              intent.putExtra("forward", true)
+              startActivity(intent)
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
