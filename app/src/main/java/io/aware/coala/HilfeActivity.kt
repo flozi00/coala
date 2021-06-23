@@ -152,6 +152,8 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
 
               firstTrigger = System.currentTimeMillis()
 
+              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
+
               try {
                 speech.stopListening()
               } catch (e: Exception){
