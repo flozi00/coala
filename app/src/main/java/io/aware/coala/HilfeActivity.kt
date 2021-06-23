@@ -148,8 +148,7 @@ class HilfeActivity : AppCompatActivity() {
                                     triggerCount = triggerCount + 1
                                     if (triggerCount >= 2) {
                                         //Load all audio samples available in the AudioRecord without blocking.
-                                        audioTensor.load(record)
-
+                                        //audioTensor.load(record)
                                         // Get the `TensorBuffer` for inference and filter it
                                         filterTensorBuffer(audioTensor.tensorBuffer)
 
@@ -190,28 +189,38 @@ class HilfeActivity : AppCompatActivity() {
     }
 
     private fun filterTensorBuffer(buffer: TensorBuffer?) {
-        //ToDo: Get PCM Encoded File From buffer and save it to storage
-        //once the file is saved in storage copy the file patch in a variable
-        val filePath = ""
-        //and pass the file path to encode in wave
-        encodeWAV(filePath)
+        val fileName = UUID.randomUUID().toString()
+        val filePath =
+            getExternalFilesDir(Environment.DIRECTORY_MUSIC).toString() + "/$fileName.pcm"
+        val file = File(filePath)
+
+        if (file.createNewFile())
+            buffer?.buffer?.array()?.let { file.writeBytes(it) }
+
+        encodeWAV(filePath, fileName)
 
     }
 
-    private fun encodeWAV(pcmFilePath: String) {
+    private fun encodeWAV(pcmFilePath: String, fileName: String) {
         val wavFilePath =
-            getExternalFilesDir(Environment.DIRECTORY_MUSIC).toString() + "/mytest.wav"
+            getExternalFilesDir(Environment.DIRECTORY_MUSIC).toString() + "/$fileName.wav"
 
         val pcmFile = File(pcmFilePath)
         val wavFile = File(wavFilePath)
         if (pcmFile.exists()) {
             mAudioSampler.pcm2Wav(pcmFile, wavFile)
-            //ToDo: If This success now upload the file to server
+            //now upload the file to server in background
             lifecycleScope.launch {
-                uploadAudioToServer(wavFile.inputStream())
+                val isHelp = uploadAudioToServer(wavFile.inputStream())
+
+                if (isHelp){
+                    Toast.makeText(this@HilfeActivity, "isHelp = $isHelp", Toast.LENGTH_SHORT)
+                        .show()
+                    //todo : do the task is result is true
+                }
             }
         } else {
-            Toast.makeText(this, "PCM Not Found", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@HilfeActivity, "PCM Not Found", Toast.LENGTH_SHORT).show()
         }
     }
 
