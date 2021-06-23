@@ -150,6 +150,7 @@ class HilfeActivity : AppCompatActivity() {
                       RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
               )
               sttIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
+              sttIntent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 1000);
 
               try {
                 startActivityForResult(sttIntent, 1)
