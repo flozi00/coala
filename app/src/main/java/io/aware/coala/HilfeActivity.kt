@@ -220,7 +220,7 @@ class HilfeActivity : AppCompatActivity() {
                 }
             }
         } else {
-            Toast.makeText(this@HilfeActivity, "PCM Not Found", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "PCM File Doesn't exist", Toast.LENGTH_SHORT).show()
         }
     }
 
