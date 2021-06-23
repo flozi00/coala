@@ -24,9 +24,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
-import android.speech.RecognitionListener
-import android.speech.RecognizerIntent
-import android.speech.SpeechRecognizer
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Button
@@ -39,7 +36,7 @@ import io.aware.coala.databinding.AcitivityHilfeBinding
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier
 
 
-class HilfeActivity : AppCompatActivity(), RecognitionListener {
+class HilfeActivity : AppCompatActivity() {
   private val probabilitiesAdapter by lazy { ProbabilitiesAdapter() }
 
   private var audioClassifier: AudioClassifier? = null
@@ -48,8 +45,6 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
   private lateinit var handler: Handler // background thread handler to run classification
   public var firstTrigger = 0.0.toLong()
   public var triggerCount = 0
-  private lateinit var speech: SpeechRecognizer
-  private lateinit var recognizerIntent: Intent
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -64,13 +59,6 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
       }
 
     }
-
-    speech = SpeechRecognizer.createSpeechRecognizer(this)
-    speech.setRecognitionListener(this)
-    recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
-    recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "US-en")
-    recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-            RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
 
     val btn_click_me = findViewById(R.id.button2) as Button
     btn_click_me.setOnClickListener {
@@ -132,10 +120,8 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
           probabilitiesAdapter.categoryList = filteredModelOutput
           probabilitiesAdapter.notifyDataSetChanged()
           Log.i("inference", filteredModelOutput.toString())
-
           for (category in filteredModelOutput) {
             if(category.label == "hilfe"){
-              /*
               var difference = System.currentTimeMillis() - firstTrigger
               if(difference <= 10000){
                 if(difference >= 1000){
@@ -148,19 +134,10 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
                 }
               } else {
                 triggerCount = 1
-              } */
+              }
+              Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
 
               firstTrigger = System.currentTimeMillis()
-
-              // Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
-
-              try {
-                speech.stopListening()
-              } catch (e: Exception){
-
-              }
-              speech.startListening(recognizerIntent)
-
             }
           }
 
@@ -212,44 +189,6 @@ class HilfeActivity : AppCompatActivity(), RecognitionListener {
     const val REQUEST_RECORD_AUDIO = 1337
     private const val TAG = "AudioDemo"
     private const val MODEL_FILE = "model_meta.tflite"
-    private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.7f
+    private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.75f
   }
-
-  override fun onReadyForSpeech(p0: Bundle?) {
-  }
-
-  override fun onBeginningOfSpeech() {
-    Toast.makeText(applicationContext,"audio trigger recognized", Toast.LENGTH_SHORT).show()
-  }
-
-  override fun onRmsChanged(p0: Float) {
-  }
-
-  override fun onBufferReceived(p0: ByteArray?) {
-  }
-
-  override fun onEndOfSpeech() {
-    Toast.makeText(applicationContext,"stopped listening", Toast.LENGTH_SHORT).show()
-  }
-
-  override fun onError(p0: Int) {
-  }
-
-
-  override fun onResults(results: Bundle?) {
-    val matches = results!!.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).toString().toLowerCase()
-    if(matches.contains("hilfe")){
-      val intent = Intent(applicationContext, assistant::class.java)
-      intent.putExtra("forward", true)
-      startActivity(intent)
-    }
-  }
-
-  override fun onPartialResults(p0: Bundle?) {
-  }
-
-  override fun onEvent(p0: Int, p1: Bundle?) {
-  }
-
-
 }
