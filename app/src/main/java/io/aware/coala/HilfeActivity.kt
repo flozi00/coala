@@ -17,8 +17,6 @@
 package io.aware.coala
 
 import android.Manifest
-import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.AudioRecord
@@ -26,7 +24,9 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
+import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Button
@@ -37,10 +37,9 @@ import androidx.core.content.ContextCompat
 import androidx.core.os.HandlerCompat
 import io.aware.coala.databinding.AcitivityHilfeBinding
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier
-import java.util.*
 
 
-class HilfeActivity : AppCompatActivity() {
+class HilfeActivity : AppCompatActivity(), RecognitionListener {
   private val probabilitiesAdapter by lazy { ProbabilitiesAdapter() }
 
   private var audioClassifier: AudioClassifier? = null
@@ -49,6 +48,8 @@ class HilfeActivity : AppCompatActivity() {
   private lateinit var handler: Handler // background thread handler to run classification
   public var firstTrigger = 0.0.toLong()
   public var triggerCount = 0
+  private lateinit var speech: SpeechRecognizer
+  private lateinit var recognizerIntent: Intent
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -63,6 +64,13 @@ class HilfeActivity : AppCompatActivity() {
       }
 
     }
+
+    speech = SpeechRecognizer.createSpeechRecognizer(this)
+    speech.setRecognitionListener(this)
+    recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+    recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "US-en")
+    recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+            RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
 
     val btn_click_me = findViewById(R.id.button2) as Button
     btn_click_me.setOnClickListener {
@@ -144,19 +152,13 @@ class HilfeActivity : AppCompatActivity() {
 
               firstTrigger = System.currentTimeMillis()
 
-              val sttIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
-              sttIntent.putExtra(
-                      RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                      RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
-              )
-              sttIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
-              sttIntent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 1000);
-
               try {
-                startActivityForResult(sttIntent, 1)
-              } catch (e: ActivityNotFoundException) {
-                e.printStackTrace()
+                speech.stopListening()
+              } catch (e: Exception){
+
               }
+              speech.startListening(recognizerIntent)
+
             }
           }
 
@@ -211,23 +213,47 @@ class HilfeActivity : AppCompatActivity() {
     private const val MINIMUM_DISPLAY_THRESHOLD: Float = 0.7f
   }
 
-  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-    super.onActivityResult(requestCode, resultCode, data)
-    when (requestCode) {
-      1 -> {
-        if (resultCode == Activity.RESULT_OK && data != null) {
-          val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
-          result?.let {
-            val recognizedText = it[0].toString().toLowerCase()
-            if(recognizedText.contains("hilfe")){
-              val intent = Intent(applicationContext, assistant::class.java)
-              intent.putExtra("forward", true)
-              startActivity(intent)
-            }
-          }
-        }
-      }
+  override fun onReadyForSpeech(p0: Bundle?) {
+    TODO("Not yet implemented")
+  }
+
+  override fun onBeginningOfSpeech() {
+    TODO("Not yet implemented")
+  }
+
+  override fun onRmsChanged(p0: Float) {
+    TODO("Not yet implemented")
+  }
+
+  override fun onBufferReceived(p0: ByteArray?) {
+    TODO("Not yet implemented")
+  }
+
+  override fun onEndOfSpeech() {
+    TODO("Not yet implemented")
+  }
+
+  override fun onError(p0: Int) {
+    TODO("Not yet implemented")
+  }
+
+
+  override fun onResults(results: Bundle?) {
+    val matches = results!!.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).toString().toLowerCase()
+    if(matches.contains("hilfe")){
+      val intent = Intent(applicationContext, assistant::class.java)
+      intent.putExtra("forward", true)
+      startActivity(intent)
     }
   }
+
+  override fun onPartialResults(p0: Bundle?) {
+    TODO("Not yet implemented")
+  }
+
+  override fun onEvent(p0: Int, p1: Bundle?) {
+    TODO("Not yet implemented")
+  }
+
 
 }
