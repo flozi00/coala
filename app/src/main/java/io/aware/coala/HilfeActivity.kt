@@ -19,7 +19,6 @@ package io.aware.coala
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.media.AudioFormat
 import android.media.AudioRecord
 import android.os.*
 import android.util.Log
@@ -38,7 +37,6 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier
-import util.AudioSampler
 import java.io.File
 import java.io.InputStream
 import java.util.*
@@ -51,11 +49,10 @@ class HilfeActivity : AppCompatActivity() {
     private var audioRecord: AudioRecord? = null
     private var classificationInterval = 500L // how often should classification run in milli-secs
     private lateinit var handler: Handler // background thread handler to run classification
-    public var firstTrigger = 0.0.toLong()
-    public var triggerCount = 0
+    var firstTrigger = 0.0.toLong()
+    var triggerCount = 0
 
     private lateinit var api: RemoteApi //remote api Instance
-    private lateinit var mAudioSampler: AudioSampler
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,11 +70,6 @@ class HilfeActivity : AppCompatActivity() {
         }
         //initialize api
         api = RemoteApi.invoke()
-        mAudioSampler = AudioSampler.Builder()
-            .sampleRate(4410)
-            .channel(AudioFormat.CHANNEL_IN_MONO)
-            .format(AudioFormat.ENCODING_PCM_16BIT) //It might be a float
-            .create()
 
 
         val btn_click_me = findViewById(R.id.button2) as Button
@@ -194,34 +186,22 @@ class HilfeActivity : AppCompatActivity() {
             getExternalFilesDir(Environment.DIRECTORY_MUSIC).toString() + "/$fileName.pcm"
         val file = File(filePath)
 
-        if (file.createNewFile())
+        if (file.createNewFile()) {
             buffer?.buffer?.array()?.let { file.writeBytes(it) }
-
-        encodeWAV(filePath, fileName)
-
-    }
-
-    private fun encodeWAV(pcmFilePath: String, fileName: String) {
-        val wavFilePath =
-            getExternalFilesDir(Environment.DIRECTORY_MUSIC).toString() + "/$fileName.wav"
-
-        val pcmFile = File(pcmFilePath)
-        val wavFile = File(wavFilePath)
-        if (pcmFile.exists()) {
-            mAudioSampler.pcm2Wav(pcmFile, wavFile)
-            //now upload the file to server in background
+            Log.d(TAG, "filterTensorBuffer: File Saved In storage")
             lifecycleScope.launch {
-                val isHelp = uploadAudioToServer(wavFile.inputStream())
-
-                if (isHelp){
+                val isHelp = uploadAudioToServer(file.inputStream(), fileName)
+                Log.d(TAG, "filterTensorBuffer: File Uploaded Successfully")
+                if (isHelp) {
                     Toast.makeText(this@HilfeActivity, "isHelp = $isHelp", Toast.LENGTH_SHORT)
                         .show()
                     //todo : do the task is result is true
                 }
             }
-        } else {
-            Toast.makeText(this, "PCM File Doesn't exist", Toast.LENGTH_SHORT).show()
-        }
+
+        } else
+            Log.d(TAG, "filterTensorBuffer: Failed to save file in storage")
+
     }
 
     private fun stopAudioClassification() {
@@ -254,13 +234,13 @@ class HilfeActivity : AppCompatActivity() {
         }
     }
 
-    private suspend fun uploadAudioToServer(stream: InputStream): Boolean {
+    private suspend fun uploadAudioToServer(stream: InputStream, fileName: String): Boolean {
         val part = MultipartBody.Part.createFormData(
             "audio",
-            UUID.randomUUID().toString() + ".wav",
+            "$fileName.pcm",
             stream.readBytes()
                 .toRequestBody(
-                    "audio/wav".toMediaTypeOrNull(),
+                    "audio/PCMA".toMediaTypeOrNull(),
                     0, stream.readBytes().size
                 )
         )
